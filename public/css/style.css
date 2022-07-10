@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Cairo", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+
+.logo {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.8em;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 400;
+  padding-left: 30px;
+}
+
+.navbar a:hover {
+  color: rgb(29, 102, 212);
+}
+
+section {
+  padding: 100px 50px;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/page-banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main h2 {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  font-size: 1.4em;
+  font-weight: 400px;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 0.1em 1.5em;
+}
+
+.main p {
+  color: rgb(255, 255, 255);
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.main-btn {
+  color: rgb(255, 255, 255);
+  background-color: rgb(32, 110, 228);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0.5em 2em;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  margin-bottom: 40px;
+  transition: 0.7s ease;
+}
+
+.main-btn:hover {
+  background-color: rgb(23, 82, 170);
+  transform: scale(1.1);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-size: 1.4em;
+  font-weight: 750;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 15px;
+  padding: 0 0;
+  margin: 40px;
+  overflow: hidden;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card:hover img {
+  opacity: 0.9;
+}
+
+.info h3 {
+  color: black;
+  font-size: 1.1em;
+  font-weight: 400px;
+  padding: 0.1em 1.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.cards .content {
+  margin-top: 100px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.foot {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  background: url('../img/slide2blur.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 1.4em;
+  font-weight: 750;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+.foot h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+.foot p {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 450;
+}
+
+.button {
+  text-decoration: none;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: rgba(189, 121, 33, 0.836);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  display: inline-block;
+  padding: 0.5em 2em;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: 0.8s ease;
+  padding: 10px 130px;
+}
+.button:hover {
+  background-color: rgba(170, 119, 23, 0.521);
+  transform: scale(0.9);
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.89);
+  color: white;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1023px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  .navbar a {
+    padding-left: 10px;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  section {
+    padding: 80px 20px;
+  }
+
+  .main-content h2 {
+    font-size: 1em;
+  }
+
+  .main-content h3 {
+    font-size: 1.6em;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 641px) {
+  body {
+    font-size: 12px;
+  }
+
+  .main-content h2 {
+    font-size: 0.8em;
+  }
+
+  .main-content h3 {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    font-size: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .navbar {
+    position: absolute;
+    top: calc(100% + 1px);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+  header {
+    border-bottom: 1px solid #ab9999;
+  }
+  .btn {
+    display: block;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .btn:hover + .navbar {
+    transform: translateX(0);
+  }
+  .btn span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+}
+
+/* .......................................................................................*/
+
+/* Puts the form in the center 100vh  ++++SIGN UP FORM STYLE++++  */
+
+.signupFrm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('../img/slide2blur.jpg') no-repeat;
+  background-size: cover;
+}
+.form {
+  background-color: rgb(255, 255, 255);
+  width: 450px;
+  border-radius: 15px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+}
+
+.title {
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.inputContainer {
+  position: relative;
+  height: 40px;
+  width: 90%;
+  margin-bottom: 17px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+input {
+  padding: 15px;
+  border-radius: 5px;
+}
+.submitBtn {
+  display: block;
+  margin-left: auto;
+  padding: 8px 35px;
+  border: none;
+  background-color: rgba(214, 149, 52, 0.856);
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+  transition: 0.8s ease;
+  float: left;
+}
+
+.submitBtn:hover {
+  background-color: rgb(241, 186, 66);
+  transform: scale(1.1);
+}
